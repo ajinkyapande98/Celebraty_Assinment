@@ -1,13 +1,269 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.searching-input {
+  height: 30px;
+  width: 320px !important;
+  text-indent: 20px;
+  box-shadow: 1px 1px 3px rgb(79, 79, 79);
+}
+/* .list-container {
+  border: 1px solid black;
+} */
+.inner-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  font-size: 14px;
+}
+.inner-unorder-list {
+  box-shadow: 0 0 8px 1px rgb(97, 96, 96);
+  position: relative;
+  width: 40%;
+  height: 6rem;
+  border-radius: 8px;
+  padding-right: 15px;
+}
+
+.inner-list-container ul li {
+  list-style: none;
+}
+
+.inner-upper-container {
+  position: relative;
+  display: flex;
+  top: 0;
+  margin-top: 8px;
+}
+
+.profile-img {
+  height: 80px;
+  width: 80px;
+}
+
+.inner-upper-container h2 {
+  margin-left: 20px;
+}
+.inner-description-container {
+  display: none;
+}
+.inner-middle-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-right: 50px;
+  padding-left: 20px;
+  display: none;
+}
+.inner-middle-container li p {
+  margin: -1px;
+}
+
+.inner-lower-container {
+  /* border: 1px solid black; */
+  position: relative;
+  top: -5px;
+  display: none;
+}
+
+.edit-btn {
+  position: absolute;
+  right: 70px;
+  height: 35px;
+  width: 35px;
+  top: 7px;
+  cursor: pointer;
+}
+.delete-btn-confirmaton {
+  position: absolute;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  top: 9px;
+  cursor: pointer;
+}
+
+/* For Accordion */
+
+.inner-unorder-list-accordion {
+  box-shadow: 0 0 8px 1px rgb(97, 96, 96);
+  position: relative;
+  width: 40%;
+  height: 22rem;
+  border-radius: 8px;
+  padding-right: 15px;
+}
+.inner-middle-container-accordion {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+.inner-description-container-accordion {
+  display: block;
+}
+.inner-lower-container-accordion {
+  /* border: 1px solid black; */
+  position: relative;
+  top: -5px;
+}
+
+.colapse-btn {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 50px;
+  top: 35px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .searching-input {
+    height: 30px;
+    width: 220px !important;
+    text-indent: 20px;
+    box-shadow: 1px 1px 3px rgb(79, 79, 79);
+  }
+  /* .list-container {
+  border: 1px solid black;
+} */
+  .inner-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    font-size: 10px;
+  }
+  .inner-unorder-list {
+    box-shadow: 0 0 8px 1px rgb(97, 96, 96);
+    position: relative;
+    width: 65%;
+    height: 6rem;
+    border-radius: 8px;
+    padding-right: 15px;
+  }
+
+  .inner-list-container ul li {
+    list-style: none;
+  }
+
+  .inner-upper-container {
+    position: relative;
+    display: flex;
+    top: 0;
+    margin-top: 8px;
+  }
+
+  .profile-img {
+    height: 60px;
+    width: 60px;
+    margin-left: -8px;
+  }
+
+  .inner-upper-container h2 {
+    margin-left: 12px;
+  }
+  .inner-description-container {
+    display: none;
+  }
+  .inner-middle-container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-right: 50px;
+    padding-left: 20px;
+    display: none;
+  }
+  .inner-middle-container li p {
+    margin: -1px;
+  }
+
+  .inner-lower-container {
+    /* border: 1px solid black; */
+    position: relative;
+    top: -5px;
+    display: none;
+  }
+
+  .edit-btn {
+    position: absolute;
+    right: 70px;
+    height: 25px;
+    width: 25px;
+    top: 26px;
+    cursor: pointer;
+  }
+  .delete-btn-confirmaton {
+    position: absolute;
+    right: 20px;
+    height: 22px;
+    width: 22px;
+    top: 28px;
+    cursor: pointer;
+  }
+
+  /* For Accordion */
+
+  .inner-unorder-list-accordion {
+    box-shadow: 0 0 8px 1px rgb(97, 96, 96);
+    position: relative;
+    width: 60%;
+    height: 20rem;
+    border-radius: 8px;
+    padding-right: 15px;
+  }
+  .inner-middle-container-accordion {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-right: 50px;
+    padding-left: 20px;
+  }
+
+  .inner-description-container-accordion {
+    display: block;
+  }
+  .inner-lower-container-accordion {
+    /* border: 1px solid black; */
+    position: relative;
+    top: -5px;
+  }
+
+  .colapse-btn {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    cursor: pointer;
+  }
 }

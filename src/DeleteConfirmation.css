@@ -1,0 +1,94 @@
+.delete-btn-confirmation-container {
+  height: 6rem;
+  width: 30%;
+  box-shadow: 0 0 5px black;
+  padding: 20px;
+  /* position: absolute; */
+  position: fixed;
+  top: 13rem;
+  left: 33%;
+  background-color: rgb(247, 250, 253);
+  border-radius: 5px;
+}
+/* .delete-container-text{
+
+} */
+
+.delete-btn-container {
+  position: relative;
+  right: -220px;
+}
+.cancel-btn {
+  background-color: aliceblue;
+  padding: 5px;
+  width: 80px;
+  border: none;
+  box-shadow: 0 0 3px black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: red;
+  margin: 10px;
+  color: aliceblue;
+  padding: 5px;
+  width: 80px;
+  border: none;
+  box-shadow: 0 0 3px black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* @media screen and (max-width: 780px) {
+  body {
+    background-color: antiquewhite;
+  }
+} */
+
+@media screen and (max-width: 780px) {
+  body {
+    background-color: rgb(251, 247, 235);
+  }
+  .delete-btn-confirmation-container {
+    font-size: 12px;
+    height: 6rem;
+    width: 60%;
+    box-shadow: 0 0 5px black;
+    padding: 10px;
+    /* position: absolute; */
+    position: fixed;
+    top: 18rem;
+    left: 18%;
+    background-color: rgb(247, 250, 253);
+    border-radius: 5px;
+  }
+  /* .delete-container-text{
+
+} */
+
+  .delete-btn-container {
+    position: relative;
+    top: 10px;
+    right: -120px;
+  }
+  .cancel-btn {
+    background-color: aliceblue;
+    padding: 5px;
+    width: 55px;
+    border: none;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .delete-btn {
+    background-color: red;
+    margin: 10px;
+    color: aliceblue;
+    padding: 5px;
+    width: 55px;
+    border: none;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
