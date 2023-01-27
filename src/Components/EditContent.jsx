@@ -15,7 +15,7 @@ const EditContent = (prop) => {
   const prevObj = useRef({});
   useEffect(() => {
     count.current += 1;
-    if (count.current > 2) {
+    if (count.current >= 2) {
       setEditButton(true);
     }
     // console.log(count);
